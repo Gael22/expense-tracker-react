@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { getTransactions, addTransaction, deleteTransaction } = require('../controllers/transactions');
-// Accessing controllers
+
 router
   .route('/')
   .get(getTransactions)
