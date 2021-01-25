@@ -2,7 +2,7 @@ const Transaction = require('../models/Transaction');
 
 // @desc    Get all transactions
 // @route   GET /api/v1/transactions
-// @access  Public
+// @access  Public...
 exports.getTransactions = async (req, res, next) => {
   try {
     const transactions = await Transaction.find();
